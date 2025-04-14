@@ -91,7 +91,7 @@ header {
 }
 .input-container .input-todo {
   height: 2em;
-  width: 75%;
+  width: 100%;
   padding: 4px;
   background-color: #fff;
   border-radius: 4px;
