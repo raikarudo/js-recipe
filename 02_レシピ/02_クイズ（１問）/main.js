@@ -3,6 +3,7 @@ const quizImage = document.getElementById("quiz-image")
 const choice1 = document.getElementById("choice-1")
 const choice2 = document.getElementById("choice-2")
 const choice3 = document.getElementById("choice-3")
+const choice4 = document.getElementById("choice-4")
 const feedback = document.getElementById("feedback")
 
 const quiz = {
@@ -21,6 +22,10 @@ const quiz = {
             text : "ゼニガメ",
             feedback : "残念!ゼニガメはクサガメまたはニホンイシガメの幼体だよ",
         },
+        {
+            text : "ガノンドロフ",
+            feedback : "残念！ガノンドロフはゼルダの伝説に登場する悪役だよ",
+        }
         
     ],
 }
@@ -31,6 +36,7 @@ const relodeQuiz = function(){
     choice1.textContent = quiz.choices[0].text
     choice2.textContent =  quiz.choices[1].text
     choice3.textContent =  quiz.choices[2].text
+    choice4.textContent =  quiz.choices[3].text
 
 }
 
@@ -49,6 +55,10 @@ choice2.onclick = function(){
 
 choice3.onclick = function(){
     choose(2)
+}
+
+choice4.onclick = function(){
+    choose(3)
 }
 
 relodeQuiz()

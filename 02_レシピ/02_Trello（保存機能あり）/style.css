@@ -86,12 +86,14 @@ header {
 }
 .input-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column; /* これを追加 */
+  justify-content: flex-start; /* 必要に応じて調整 */
+  align-items: flex-start; /* 左寄せにしたい場合 */
 }
-.input-container .input-todo {
+
+.input-todo {
   height: 2em;
-  width: 75%;
+  width: 100%;
   padding: 4px;
   background-color: #fff;
   border-radius: 4px;
@@ -118,5 +120,9 @@ header {
   transform: translateY(2px);
 }
 .list-footer {
+  margin-top: 8px;
+}
+
+.plus-message {
   margin-top: 8px;
 }
